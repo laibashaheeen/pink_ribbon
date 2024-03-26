@@ -9,6 +9,7 @@ import 'package:pink_ribbon/model/testimonial_model.dart';
 import 'package:pink_ribbon/views/homepage/components/banner_card.dart';
 import 'package:pink_ribbon/views/homepage/components/testimonial.dart';
 
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -63,161 +64,161 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: SingleChildScrollView(
-        child: Stack(
-          children: [
-            Opacity(
-              opacity: 0.2,
-              child: Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage(
-                    AppAssets.kBackground,      // this image is not showing up due to singlechildscrollview
-                  ),
-                )),
-              ),
-            ),
-            SizedBox(
-              width: double.infinity,
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 55.h,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 22.0.w),
-                    child: Card(
-                      elevation: 3,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0.r),
-                      ),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          contentPadding: EdgeInsets.zero,
-                          filled: true,
-                          fillColor: AppColors.kWhite,
-                          hintText: 'Search',
-                          hintStyle: AppTypography.kSemiBold14
-                              .copyWith(color: AppColors.kPrimary),
-                          prefixIcon: Padding(
-                            padding: EdgeInsets.only(left: 8.0.w),
-                            child: Icon(
-                              Icons.search,
-                              color: AppColors.kPrimary,
-                              size: 26,
-                            ),
-                          ),
-                          border: InputBorder.none,
-                          focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30.r),
-                              borderSide: BorderSide.none),
-                          enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30.r),
-                              borderSide: BorderSide.none),
-                          disabledBorder: const OutlineInputBorder(),
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 35.h,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 22.0.w),
-                    child: CarouselSlider(
-                        carouselController: carouselController,
-                        items: [
-                          BannerCard(imagePath: AppAssets.kHospital2),
-                          BannerCard(imagePath: AppAssets.kHospital1),
-                          BannerCard(imagePath: AppAssets.kHospital3),
-                        ],
-                        options: CarouselOptions(
-                          height: 195.h,
-                          viewportFraction: 1,
-                          initialPage: 0,
-                          enableInfiniteScroll: true,
-                          autoPlayInterval: const Duration(seconds: 2),
-                          autoPlayAnimationDuration:
-                              const Duration(milliseconds: 800),
-                          autoPlayCurve: Curves.fastOutSlowIn,
-                          onPageChanged: (index, reason) => {
-                            setState(
-                              () {
-                                current = index;
-                              },
-                            )
-                          },
-                        )),
-                  ),
-                  SizedBox(
-                    height: 14.h,
-                  ),
-                  DotsIndicator(
-                    dotsCount: 3,
-                    decorator: DotsDecorator(
-                        color: AppColors.kAppBarGrey,
-                        activeColor: AppColors.kAppBarPink,
-                        activeSize: const Size.square(12),
-                        spacing: EdgeInsets.all(2.h)),
-                    position: current,
-                  ),
-                  SizedBox(
-                    height: 20.h,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 26.0.w),
-                    child: Text(
-                      '"And whoever saves a life, it will be as if they saved all \nof humanity."',
-                      style: AppTypography.kSemiBold20.copyWith(
-                        color: AppColors.kGrey,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 10.h,
-                  ),
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: Padding(
-                      padding: EdgeInsets.only(right: 45.0.w),
-                      child: Text(
-                        "Al Quran - 5:32",
-                        style: AppTypography.kLight14.copyWith(
-                          color: AppColors.kAppBarPink,
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 20.h,
-                  ),
-                  CarouselSlider.builder(
-                    options: CarouselOptions(
-                      height: 260,
-                      viewportFraction: 0.7,
-                      initialPage: 1,
-                      enableInfiniteScroll: true,
-                      enlargeCenterPage: true,
-                      enlargeFactor: 0.15,
-                    ),
-                    itemCount: testimonialItem.length,
-                    itemBuilder:
-                        (BuildContext context, int index, int pageViewIndex) =>
-                            TestimonialCard(
-                      testimonialItem: testimonialItem[index],
-                    ),
-                  ),
-                  SizedBox(
-                    height: 100.h,
-                  )
-                ],
-              ),
-            ),
-          ],
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              AppColors.kBackgroundPink1.withOpacity(0.4),
+              AppColors.kBackgroundPink2.withOpacity(0.5),
+              AppColors.kWhite,
+            ],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
         ),
+          child: Column(
+            children: [
+              SizedBox(
+                height: 55.h,
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 22.0.w),
+                child: Card(
+                  elevation: 3,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0.r),
+                  ),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      contentPadding: EdgeInsets.zero,
+                      filled: true,
+                      fillColor: AppColors.kWhite,
+                      hintText: 'Search',
+                      hintStyle: AppTypography.kSemiBold14
+                          .copyWith(color: AppColors.kPrimary),
+                      prefixIcon: Padding(
+                        padding: EdgeInsets.only(left: 8.0.w),
+                        child: Icon(
+                          Icons.search,
+                          color: AppColors.kPrimary,
+                          size: 26,
+                        ),
+                      ),
+                      border: InputBorder.none,
+                      focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30.r),
+                          borderSide: BorderSide.none),
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30.r),
+                          borderSide: BorderSide.none),
+                      disabledBorder: const OutlineInputBorder(),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 35.h,
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 22.0.w),
+                child: CarouselSlider(
+                    carouselController: carouselController,
+                    items: [
+                      BannerCard(imagePath: AppAssets.kHospital2),
+                      BannerCard(imagePath: AppAssets.kHospital1),
+                      BannerCard(imagePath: AppAssets.kHospital3),
+                    ],
+                    options: CarouselOptions(
+                      height: 195.h,
+                      viewportFraction: 1,
+                      initialPage: 0,
+                      enableInfiniteScroll: true,
+                      autoPlayInterval: const Duration(seconds: 2),
+                      autoPlayAnimationDuration:
+                          const Duration(milliseconds: 800),
+                      autoPlayCurve: Curves.fastOutSlowIn,
+                      onPageChanged: (index, reason) => {
+                        setState(
+                          () {
+                            current = index;
+                          },
+                        )
+                      },
+                    )),
+              ),
+              SizedBox(
+                height: 14.h,
+              ),
+              DotsIndicator(
+                dotsCount: 3,
+                decorator: DotsDecorator(
+                    color: AppColors.kAppBarGrey,
+                    activeColor: AppColors.kAppBarPink,
+                    activeSize: const Size.square(12),
+                    spacing: EdgeInsets.all(2.h)),
+                position: current,
+              ),
+              SizedBox(
+                height: 20.h,
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 26.0.w),
+                child: Text(
+                  '"And whoever saves a life, it will be as if they saved all \nof humanity."',
+                  style: AppTypography.kSemiBold18.copyWith(
+                    color: AppColors.kGrey,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              SizedBox(
+                height: 10.h,
+              ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: Padding(
+                  padding: EdgeInsets.only(right: 45.0.w),
+                  child: Text(
+                    "Al Quran - 5:32",
+                    style: AppTypography.kLight14.copyWith(
+                      color: AppColors.kAppBarPink,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 20.h,
+              ),
+              
+              CarouselSlider.builder(
+                options: CarouselOptions(
+                  height: 260,
+                  viewportFraction: 0.7,
+                  initialPage: 1,
+                  enableInfiniteScroll: true,
+                  enlargeCenterPage: true,
+                  enlargeFactor: 0.15,
+                ),
+                itemCount: testimonialItem.length,
+                itemBuilder:
+                    (BuildContext context, int index, int pageViewIndex) =>
+                        TestimonialCard(
+                  testimonialItem: testimonialItem[index],
+                ),
+              ),
+              SizedBox(
+                height: 100.h,
+              ),
+              
+            ],
+          ),
+          
+        ),
+        
       ),
+      
+      
     );
   }
 }

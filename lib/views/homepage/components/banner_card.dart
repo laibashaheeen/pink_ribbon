@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
 class BannerCard extends StatelessWidget {
-  // const BannerCard({ super.key });
+  
    final String imagePath;
 
    const BannerCard({Key? key, required this.imagePath}) : super(key: key);
