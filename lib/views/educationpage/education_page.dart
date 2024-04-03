@@ -4,6 +4,8 @@ import 'package:pink_ribbon/data/app_colors.dart';
 import 'package:pink_ribbon/data/typography.dart';
 import 'package:pink_ribbon/model/EducationModel.dart';
 import 'package:pink_ribbon/views/educationpage/components/EducationCard.dart';
+import 'package:pink_ribbon/views/educationpage/components/factors.dart';
+import 'package:pink_ribbon/views/educationpage/components/what_is_breast_cancer.dart';
 import 'package:pink_ribbon/views/landingpage/landing_page.dart';
 
 
@@ -15,10 +17,29 @@ class EducationPage extends StatefulWidget {
 }
 
 class _EducationPageState extends State<EducationPage> {
+  final Map<int, Widget> pageMap = {
+    0: const BreastCancer(),
+    1: const Factors(),
+    
+  };
   
+ 
+  
+  
+  
+
+  void navigateToPage(int index) {
+    if (pageMap.containsKey(index)) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => pageMap[index]!),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       appBar: AppBar(
         
@@ -95,8 +116,12 @@ class _EducationPageState extends State<EducationPage> {
                         physics: const NeverScrollableScrollPhysics(),
                         itemCount: educationItem.length,
                         itemBuilder: (BuildContext context, int index) {
-                          return EducationCard(
-                            educationItem: educationItem[index],
+                          
+                          return InkWell(
+                            onTap: () => navigateToPage(index),
+                            child: EducationCard(
+                              educationItem: educationItem[index],
+                            ),
                           );
                         },
                       ),

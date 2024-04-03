@@ -7,10 +7,10 @@ class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
 
   @override
-  State<LandingPage> createState() => _HomePageState();
+  State<LandingPage> createState() => _LandingPageState();
 }
 
-class _HomePageState extends State<LandingPage> {
+class _LandingPageState extends State<LandingPage> {
   int _currentIndex = 0;
   bool isSelected = false;
 

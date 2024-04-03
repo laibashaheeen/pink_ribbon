@@ -8,8 +8,8 @@ class AppAssets {
   static String kSurvivor1 = 'assets/images/survivor1.jpg';
   static String kSurvivor2 = 'assets/images/survivor2.jpg';
   static String kSurvivor3 = 'assets/images/survivor3.jpg';
-
-
+  static String kAlcohol = 'assets/images/Alcohol.png';
+  
 
  // svg
   static String kEducation = 'assets/icons/education.svg';

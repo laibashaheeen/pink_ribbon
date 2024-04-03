@@ -38,7 +38,7 @@ class EducationCard extends StatelessWidget {
             decoration: BoxDecoration(
                 color: AppColors.kPrimary,
                 borderRadius: BorderRadius.circular(15.r)),
-            child: Text(educationItem.subtitle,
+            child: Text(educationItem.title,
             style: AppTypography.kSemiBold14.copyWith(color: AppColors.kWhite),),
           ),
         )

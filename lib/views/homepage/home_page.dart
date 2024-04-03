@@ -178,7 +178,7 @@ class _HomePageState extends State<HomePage> {
               Align(
                 alignment: Alignment.centerRight,
                 child: Padding(
-                  padding: EdgeInsets.only(right: 45.0.w),
+                  padding: EdgeInsets.only(right: 30.0.w),
                   child: Text(
                     "Al Quran - 5:32",
                     style: AppTypography.kLight14.copyWith(

@@ -44,6 +44,8 @@ class AppTypography {
       GoogleFonts.montserrat(fontSize: 34.sp, fontWeight: FontWeight.w600);
 
   // Bold . (700)
+  static TextStyle kBold14 =
+      GoogleFonts.montserrat(fontSize: 14.sp, fontWeight: FontWeight.w700);
   static TextStyle kBold16 =
       GoogleFonts.montserrat(fontSize: 16.sp, fontWeight: FontWeight.w700);
   static TextStyle kBold18 =
