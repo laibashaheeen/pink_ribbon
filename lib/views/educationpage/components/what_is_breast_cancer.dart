@@ -36,7 +36,7 @@ class _BreastCancerState extends State<BreastCancer> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
-              height: 40.h,
+              height: 45.h,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -58,71 +58,71 @@ class _BreastCancerState extends State<BreastCancer> {
                     onTap: () {},
                     child: Icon(
                       Icons.share,
-                      color: AppColors.kAppBarGrey,
+                      color: AppColors.kPrimary,
                     ))
               ],
             ),
-            SizedBox(height: 25.h),
+            SizedBox(height: 30.h),
             Text(
               "Cells in the body normally divides at a steady and even pace. Human body continuously forms New cells to take the place of old and injured cells. Sometimes, however, when cells divide and multiply rapidly, they form a lump also called a tumour. Nearly 80% of finding on a mammogram are not cancer. They are usually benign tumours, a cyst or some other non-cancerous condition. A tumour is called cancer only when it starts invading nearby tissues and organs and damage them.",
-              style: AppTypography.kLight14.copyWith(height: 1.5.h),
+              style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             Text(
               "Types of Breast Cancer",
-              style: AppTypography.kBold18,
+              style: AppTypography.kSemiBold16.copyWith(color: AppColors.kPrimary),
             ),
             
             
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             Text(
               "Your diagnosis will tell you the name of the condition you have. It is important to remember that most of the lumps will be a benign (non-cancerous) condition.",
-              style: AppTypography.kLight14.copyWith(height: 1.5.h),
+              style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
             
-            SizedBox(height: 12.h),
+            SizedBox(height: 10.h),
             Text(
               "If you are diagnosed with breast cancer, this may be described as non-invasive, primary or secondary cancer.",
-              style: AppTypography.kLight14.copyWith(height: 1.5.h),
+              style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
             SizedBox(height: 5.h),
             Text(
-              "Non-invasive cancers",
-              style: AppTypography.kBold14,
+              "Non-invasive cancer",
+              style: AppTypography.kSemiBold14.copyWith(color: AppColors.kPrimary),
             ),
             SizedBox(height: 5.h),
             Text(
               "Non-invasive cancers are cancerous changes that are contained within the breast ducts or lobules; for example, Ductal Carcinoma In Situ (DCIS) or Lobular Carcinoma In Situ (LCIS).",
-              style: AppTypography.kLight14.copyWith(height: 1.5.h),
+              style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
             SizedBox(height: 5.h),
             Text(
-              "Invasive cancers ",
-              style: AppTypography.kBold14,
+              "Invasive cancer ",
+              style: AppTypography.kSemiBold14.copyWith(color: AppColors.kPrimary),
             ),
             SizedBox(height: 5.h),
             Text(
               "Primary cancer, also known as invasive cancer, is a tumour that grows outside the ducts and lobules into the surrounding breast tissue.",
-              style: AppTypography.kLight14.copyWith(height: 1.5.h),
+              style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
             SizedBox(height: 5.h),
             Text(
               "Metastatic cancer",
-              style: AppTypography.kBold14,
+              style: AppTypography.kSemiBold14.copyWith(color: AppColors.kPrimary),
             ),
             SizedBox(height: 5.h),
             Text(
               "Secondary breast cancer, or metastatic breast cancer, is when cells from the breast tumour spread to other parts of the body, starting with the axillary lymph nodes under the armpit, and then form tumours in other locations such as the bone or the brain.",
-              style: AppTypography.kLight14.copyWith(height: 1.5.h),
+              style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
             
             SizedBox(height: 12.h),
             Text(
               "Before deciding on treatment, your doctor will also look at the stage of your cancer – what size it is and how much it has spread, and the grade – how different the cancer cells are from normal breast cells and how fast they are growing.",
-              style: AppTypography.kLight14.copyWith(height: 1.5.h),
+              style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
             
-            SizedBox(height: 100.h),
+            SizedBox(height: 50.h),
             
           ],
         ),

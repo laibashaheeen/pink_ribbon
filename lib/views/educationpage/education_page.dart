@@ -5,6 +5,8 @@ import 'package:pink_ribbon/data/typography.dart';
 import 'package:pink_ribbon/model/EducationModel.dart';
 import 'package:pink_ribbon/views/educationpage/components/EducationCard.dart';
 import 'package:pink_ribbon/views/educationpage/components/factors.dart';
+import 'package:pink_ribbon/views/educationpage/components/stages.dart';
+import 'package:pink_ribbon/views/educationpage/components/symptoms.dart';
 import 'package:pink_ribbon/views/educationpage/components/what_is_breast_cancer.dart';
 import 'package:pink_ribbon/views/landingpage/landing_page.dart';
 
@@ -20,6 +22,8 @@ class _EducationPageState extends State<EducationPage> {
   final Map<int, Widget> pageMap = {
     0: const BreastCancer(),
     1: const Factors(),
+    2: const Symptoms(),
+    3: const Stages(),
     
   };
   
