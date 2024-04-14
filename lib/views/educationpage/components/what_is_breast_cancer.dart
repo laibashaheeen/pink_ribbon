@@ -85,32 +85,32 @@ class _BreastCancerState extends State<BreastCancer> {
               "If you are diagnosed with breast cancer, this may be described as non-invasive, primary or secondary cancer.",
               style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             Text(
               "Non-invasive cancer",
               style: AppTypography.kSemiBold14.copyWith(color: AppColors.kPrimary),
             ),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             Text(
               "Non-invasive cancers are cancerous changes that are contained within the breast ducts or lobules; for example, Ductal Carcinoma In Situ (DCIS) or Lobular Carcinoma In Situ (LCIS).",
               style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             Text(
               "Invasive cancer ",
               style: AppTypography.kSemiBold14.copyWith(color: AppColors.kPrimary),
             ),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             Text(
               "Primary cancer, also known as invasive cancer, is a tumour that grows outside the ducts and lobules into the surrounding breast tissue.",
               style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             Text(
               "Metastatic cancer",
               style: AppTypography.kSemiBold14.copyWith(color: AppColors.kPrimary),
             ),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             Text(
               "Secondary breast cancer, or metastatic breast cancer, is when cells from the breast tumour spread to other parts of the body, starting with the axillary lymph nodes under the armpit, and then form tumours in other locations such as the bone or the brain.",
               style: AppTypography.kLight14.copyWith(height: 1.6.h),

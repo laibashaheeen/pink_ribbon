@@ -90,13 +90,13 @@ class _StagesState extends State<Stages> {
               "In Stage I invasive breast cancer (cancer cells are breaking through or invading normal surrounding breast tissue) Stage I is divided into subcategories known as IA and IB",
               style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             customRichText(
                 'Stage IA ', 'describes invasive breast cancer in which:'),
             bullets("The tumour measures up to 2 centimetres AND"),
             bullets(
                 "Cancer has not spread outside the breast; no lymph nodes are involved"),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             customRichText(
                 'Stage IB ', 'describes invasive breast cancer in which:'),
             bullets(
@@ -114,7 +114,7 @@ class _StagesState extends State<Stages> {
               "Stage II is divided into subcategories known as IIA and IIB.",
               style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             customRichText(
                 'Stage IIA ', 'describes invasive breast cancer in which:'),
             bullets(
@@ -123,7 +123,7 @@ class _StagesState extends State<Stages> {
                 "A tumour measures 2 centimetres or smaller and has spread to the axillary lymph nodes OR"),
             bullets(
                 "A tumour measures 2 centimetres or smaller and has spread to the axillary lymph nodes OR"),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             customRichText(
                 'Stage IIB ', 'describes invasive breast cancer in which:'),
             bullets(
@@ -143,7 +143,7 @@ class _StagesState extends State<Stages> {
               "Stage III is divided into subcategories known as IIIA, IIIB, and IIIC.",
               style: AppTypography.kLight14.copyWith(height: 1.6.h),
             ),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             customRichText('Stage IIIA ',
                 'describes invasive breast cancer in which either:'),
             bullets(
@@ -152,14 +152,14 @@ class _StagesState extends State<Stages> {
                 "A tumour is larger than 5 centimetres; small groups of breast cancer cells (larger than 0.2 millimetres but not larger than 2 millimetres) are found in the lymph nodes OR"),
             bullets(
                 "A tumour is larger than 5 centimetres; cancer has spread to 1 to 3 axillary lymph nodes or to the lymph nodes near the breastbone (found during a sentinel lymph node biopsy)"),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             customRichText(
                 'Stage IIIB ', 'describes invasive breast cancer in which:'),
             bullets(
                 "A tumour may be any size and has spread to the chest wall and/or skin of the breast and caused swelling or an ulcer AND"),
             bullets("It May have spread to up to 9 axillary lymph nodes OR"),
             bullets("It May have spread to lymph nodes near the breastbone"),
-            SizedBox(height: 5.h),
+            SizedBox(height: 10.h),
             customRichText(
                 'Stage IIIC ', 'describes invasive breast cancer in which:'),
             bullets(
